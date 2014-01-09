@@ -1,0 +1,16 @@
+{% extends "template.html" %}
+{% block content %}
+
+<div class="row" class="jumbo">
+ <div class="large-12 columns">
+  <h1> Please Register </h1>
+    <br/>
+    <form action="" method="POST">
+	    <p>{{ form.name.label }}: {{ form.name }}&nbsp;&nbsp;{{ form.email.label }}: {{ form.email }}</p>
+	    <p>{{ form.password.label }}: {{ form.password }}&nbsp;&nbsp;{{ form.confirm.label }}: {{ form.confirm }}</p>
+	    <p><input type="submit" value="Register" class="large round button"></p>
+    </form>
+    <p><em>Already registered?</em> Click <a href="{{ url_for('users.login') }}">here</a> to login</p>
+  </div>
+</div>
+{% endblock %}

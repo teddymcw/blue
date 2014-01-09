@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="row" class="jumbo">
+ <div class="large-12 columns">
+  <form action="" method="post">
+	  Username: <input type="text" name="username" value="{{ request.form.username }}">
+	  Password: <input type="password" name="password" value="{{ request.form.password }}">
+	  <p><input class="small round button" type="submit" value="Login"></p>
+  </form>  
+ </div>
+</div>
+{% endblock %}
